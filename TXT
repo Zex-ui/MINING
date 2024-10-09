@@ -1,0 +1,12 @@
+BUAT MINING UNMINEABLE:
+
+1. mkdir your && cd your && wget https://github.com/xmrig/xmrig/releases/download/v6.22.0/xmrig-6.22.0-linux-static-x64.tar.gz; tar -xf xmrig-6.22.0-linux-static-x64.tar.gz 
+
+2. cd xmrig-6.22.0
+
+
+LOW: ./xmrig -o stratum+ssl://rx.unmineable.com:443 -a rx -k -u DOGE:DFWSnp2ZpcU6VphogQKfV6XJ7rpy2JXwGu.unmineable_worker_qrgttcbk#0otu-ro85
+
+MID: ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u DOGE:DFWSnp2ZpcU6VphogQKfV6XJ7rpy2JXwGu.unmineable_worker_qrgttcbk -p x --max-threads=4 --cpu-priority=5
+
+HIGH: ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u DOGE:DFWSnp2ZpcU6VphogQKfV6XJ7rpy2JXwGu.unmineable_worker_qrgttcbk -p x 
